@@ -95,9 +95,9 @@ Feel free to contribute, ask questions, or provide feedback.
 
 ## Contributors
 
-- [Your Name] ([Your GitHub Profile](https://github.com/yourusername))
+- [Your Name] ([Your GitHub Profile])
 
-If you'd like to contribute to this repository, please follow our [Contribution Guidelines](CONTRIBUTING.md).
+If you'd like to contribute to this repository, please feel free to generate PR.
 
 ## License
 
