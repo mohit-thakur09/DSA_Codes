@@ -1,0 +1,296 @@
+
+*******************************************************************************************************
+
+			   Data Structures - using C Language
+ 
+*******************************************************************************************************
+
+~ ARRAY 
+: Intro, Benefits, Drawback, types (1d,2d,3d..., Nd), Real Life EX.
+
+(INSERT / DEL (beg., middle, end), SHIFT INDEX, REPLACE, TRAVERSE, REVERSE)
+
+-------------------------------------------------------------------------------------------------------
+~ Pointers
+
+: Intro
+- & reff, 
+- * de-reff. 
+
+: Types 
+- direct,
+- indirect,
+- null,
+- wild,
+- dangling,
+- garbage.
+
+~ Use Cases with Examples.
+
+-------------------------------------------------------------------------------------------------------
+~ Structure
+
+(Creating with all primitive DT's, Access in same & other function, struct with pointers).
+
+-------------------------------------------------------------------------------------------------------
+
+
+*******************************************************************************************************
+					 STACK 
+*******************************************************************************************************
+
+: Intro, Benefits, Drawback, Restrictions, Real Life EX.
+-------------------------------------------------------------------------------------------------------
+~ Stack
+
+(PUSH, POP, PEEP/PEEK, TRAVERSE)
+
+-------------------------------------------------------------------------------------------------------
+
+	* STACK APPLICATIONS *
+
+-------------------------------------------------------------------------------------------------------
+(Variable Expression & Value Expression - Algo & Manual Sol.)
+
+# PREFIX, INFIX, POSTFIX
+
+# POSTFIX Expression Calculation Algo.
+# PREFIX Expression Calculation Algo.
+
+# Conversion INFIX to POSTFIX
+# Conversion INFIX to PRIFIX
+
+-------------------------------------------------------------------------------------------------------
+
+
+*******************************************************************************************************
+					 QUEUE 
+*******************************************************************************************************
+
+: Intro, Benefits, Drawback, Restrictions, Real Life EX.
+-------------------------------------------------------------------------------------------------------
+~ Liner Queue 
+
+(Insert, Del/Rem, Traverse)
+
+-------------------------------------------------------------------------------------------------------
+~ Circular Queue + Improved Conditions.
+
+(Insert, Del/Rem)
+
+-------------------------------------------------------------------------------------------------------
+
+	* PENDING *
+
+~ Doubly Ended Queue/DE-Queue.
+~ Priority Queue.
+
+-------------------------------------------------------------------------------------------------------
+
+
+
+*******************************************************************************************************
+					 LINKED LIST 
+*******************************************************************************************************
+
+: Intro, Benefits, Drawback, Restrictions, Real Life EX.
+-------------------------------------------------------------------------------------------------------
+~ Singly Linked List
+
+(Append, Add at Position, Display, Count, Search Node, Del-"node Data", Del-"node Position", 
+Sort while insert, Print Data Reverse, Actual reverse)
+
+-------------------------------------------------------------------------------------------------------
+~ Circular Linked List
+
+(Insert, Del, display, count, search, insert as sorted)
+
+-------------------------------------------------------------------------------------------------------
+~ Doubly Linked List
+
+(Append, display, delete, count, search)
+
+-------------------------------------------------------------------------------------------------------
+
+	* LINKED LIST APPLICATIONS *
+
+-------------------------------------------------------------------------------------------------------
+# Dynamic Stack.
+# Dynamic Queue.
+
+# Additions of Polynomials.
+-------------------------------------------------------------------------------------------------------
+
+
+*******************************************************************************************************
+					 TREES 
+*******************************************************************************************************
+
+: Intro, Benefits, Drawback, Restrictions, Real Life EX.
+-------------------------------------------------------------------------------------------------------
+~ Tree Related Terminologies.
+
+# Binary Trees
+
+1. Binary Search Tree
+2. Complete Binary Tree
+3. Full Binary Tree / Strict Binary Tree
+4. Perfect Binary Tree
+5. Degenerated Binary Tree
+
+# Nodes.
+
+1. Root Node
+2. Child Node
+3. Leaf Node
+4. Non leaf Node
+5. Level of Tree
+6. Height/Depth of Tree
+7. Sibling Node
+
+# Adjacent Node / Adjacent Sibling Node:
+
+9. Successor / Descendent Node
+10. Predecessor/Ancestor Node
+11. nodes Of Same Generations
+
+# Graphs Representation
+
+~ Array: static, Sequential.
+~ LinkedList: Dynamic, nonsequential.
+
+-------------------------------------------------------------------------------------------------------
+	* PRACTICE *
+
+~ Creating BST Via Given Items.
+~ PRE/IN/POST Order Traversal
+~ Generating sequence Via Given Tree (using Traversal)
+
+-------------------------------------------------------------------------------------------------------
+~ Binary Search tree
+
+(Insertion, Deletion, search Node, In order, preorder, Post order)
+
+-------------------------------------------------------------------------------------------------------
+~ Heap tree (Array Implementation)
+ : Max heap
+
+(Insertion, Deletion, search Node, Traverse)
+
+-------------------------------------------------------------------------------------------------------
+~ AVL tree (using recursion)
+
+(Insertion, Deletion (RR,RL,LL,LR), In order, Preorder, Post order)
+
+-------------------------------------------------------------------------------------------------------
+~ TBT tree 
+: Based on Tree Traversals(pre/in/post) 
+- ONE Way INORDER, 
+- TWO Way INORDER, 
+- TWO Way INORDER with Header Node.
+
+(Insertion, Deletion, search Node, In order, Preorder, Post order)
+
+-------------------------------------------------------------------------------------------------------
+~ Multiway Search tree 
+
+(Definitions, Types - B Tree, B+ Tree)
+
+-------------------------------------------------------------------------------------------------------
+~ B tree
+
+(Insertion, Deletion, search Node, In order)
+
+-------------------------------------------------------------------------------------------------------
+
+
+*******************************************************************************************************
+					 GRAPHS 
+*******************************************************************************************************
+
+: Intro G= (V, E), Benefits, Drawback, Restrictions, Real-life Ex.
+-Diff btw TREE vs GRAPH
+-------------------------------------------------------------------------------------------------------
+~ Graphs Related Terminologies.
+
+# Graphs
+
+1. Directed Graph.
+2. Undirected Graph.
+3. Mixed Graph.
+4. weighted Graph.
+5. non weighted Graph.
+6. Tree graph.
+7. Complete Graph.
+
+
+# Vertices
+
+1. Adjacent Vertices.
+2. Indegree vertices.
+3. Out degree vertices.
+4. Initial vertices.
+5. Terminal vertices.
+6. Sling vertices.
+7. source / Sink vertices.
+
+# Edges
+
+1. Directed/non directed edges.
+2. weighted/non weighted edges.
+3. parallel edges.
+
+
+# Graphs Representation
+
+~ Adjacency Matrix: Array, static, Sequential.
+~ Adjacency List: LinkedList, Dynamic, nonsequential.
+
+-------------------------------------------------------------------------------------------------------
+
+~ Drawbacks’ Of Adjacency matrix
+~ Path Matrix/Reachability matrix:
+	- Power Of Adj. Matrix:  P [k + 1] = P[k] (i.e., k is No. of vertices in graph)
+	- Warshell's Algo: P(k) [i][j] = P(k-1) [i][j] || ( P(k-1) [i][k] && P(k-1) [k][j] ) 
+
+(code Implementation: Insertion, Traversal)
+
+-------------------------------------------------------------------------------------------------------
+~ Adjacency List: 
+	- using Linked List,
+	- Diagrammatic View.
+
+(Insert Vertex, Insert Edge, find vertex, find edge, remove vertex, remove edge, display graph)
+
+-------------------------------------------------------------------------------------------------------
+~ Graph Traversal methods 
+	~ BFS (using queue)
+	~ DFS (using stack)
+
+-------------------------------------------------------------------------------------------------------
+~ Shortest path 
+	~ Warshell's (all vertex to all vertex): M(k+1) = min( M[i][j], M[i][k]+M[k][j] )
+	~ Dijikstra's (1 vertex to 1 vertex): D[v] = min(d[v], d[v][v'], d[v'])
+						==> v = source & (v') =destination
+
+-------------------------------------------------------------------------------------------------------
+~ Spanning Tree (convert Graphs into tree)
+
+
+-------------------------------------------------------------------------------------------------------
+~ Traversal of Spanning Tree
+	~ Prime's
+	~ Kruskal
+
+
+*******************************************************************************************************
+					 RECURSSION 
+*******************************************************************************************************
+
+*******************************************************************************************************
+				   COMPLEXITY: TIME & SPACE
+*******************************************************************************************************
+
+*******************************************************************************************************
+				     SEARCHING & SORTING 
+*******************************************************************************************************
